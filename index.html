@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Form validation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <div class="container">
+        <h1>Registreren</h1>
+
+        <label for="username">Gebruikersnaam:</label>
+        <input type="text" id="username" name="username">
+        <span class="username-warning">Gebruikersnaam mag geen '@' bevatten.</span>
+
+        <label for="password">Wachtwoord:</label>
+        <input type="text" id="password" name="password">
+        <div class="password-warning">
+            Wachtwoord moet uit minimaal 6 tekens bestaan en minimaal uit:
+            <ul>
+                <li>1 cijfer</li>
+                <li>hoofdletter</li>
+                <li>kleine letter</li>
+                <li>een speciaal teken (@, #, $, %, & of !)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
